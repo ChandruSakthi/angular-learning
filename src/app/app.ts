@@ -10,4 +10,10 @@ import { SideBar } from "../shared/side-bar/side-bar";
 })
 export class App {
   protected title = 'app';
+  hasError = false;
+  name="";
+
+  onChange($e:Event){
+    this.name=($e.target as HTMLInputElement).value;
+  }
 }
