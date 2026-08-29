@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SideBar } from "../shared/side-bar/side-bar";
+import{FormsModule} from "@angular/forms"
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, SideBar],
+  imports: [RouterOutlet, SideBar,FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -12,8 +13,4 @@ export class App {
   protected title = 'app';
   hasError = false;
   name="";
-
-  onChange($e:Event){
-    this.name=($e.target as HTMLInputElement).value;
-  }
 }

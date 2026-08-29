@@ -11,7 +11,7 @@
   </nav>
   <main class="p-5">
     {{title}}
-   Name : <input type="text" class="border" value={{name}} (change)="onChange($event)">
+   Name : <input type="text" class="border" [(ngModel)]="name">
     {{name}}
   </main>
 </section>
