@@ -2,3 +2,7 @@
 {{user.Age}}
 {{user.Name}}
 {{user.Gender}}
+
+<button (click)="onSubmit()">Submit</button>
+
+<button (click)="failure.emit({error: 'some error'})">Failure</button>

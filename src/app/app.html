@@ -10,6 +10,9 @@
     <app-side-bar></app-side-bar>
   </nav>
   <main class="p-5">
-    <app-heading [user]="user"></app-heading>
+    <app-heading [user]="user" 
+    (success)="onSuccess($event)"
+     (failure)= "onFailure($event)">
+  </app-heading>
    </main>
 </section>

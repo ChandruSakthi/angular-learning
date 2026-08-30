@@ -19,4 +19,13 @@ export class App {
     Age: 25,
     Gender : "Male"
   }
+  onSuccess($e:User){
+    console.log($e)
+    this.user=$e;
+
+  }
+
+  onFailure($e:{error:String}){
+    console.log($e)
+  }
 }
