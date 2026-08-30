@@ -10,8 +10,6 @@
     <app-side-bar></app-side-bar>
   </nav>
   <main class="p-5">
-    {{title}}
-   Name : <input type="text" class="border" [(ngModel)]="name">
-    {{name}}
-  </main>
+    <app-heading [user]="user"></app-heading>
+   </main>
 </section>
